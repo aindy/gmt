@@ -1,0 +1,8 @@
+Express server listening on port \\.\pipe\797008f3-e223-4e22-b780-7eff9eec6b98
+trace01
+result: 'ssh' is not recognized as an internal or external command,
+operable program or batch file.
+
+exec error: Error: Command failed: 'ssh' is not recognized as an internal or external command,
+operable program or batch file.
+

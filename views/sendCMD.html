@@ -1,19 +1,17 @@
 <% include header.html %>
-<div class="container-fluid">
+<div class="col-md-9">
 <form class="form-horizontal" method="post">
 <fieldset>
 <legend>发送命令</legend>
-<div class="control-group">
-<label class="control-label" for="servername">服务器</label>
-<div class="controls">
-<input type="text" class="input-xlarge" id="servername" name="servername" value="mail01">
+<div class="form-group">
+<label for="servername">服务器</label>
+<input type="text" class="form-control" id="servername" name="servername" placeholder="mail01">
+
 </div>
-</div>
-<div class="control-group">
-<label class="control-label" for="cmd">命令</label>
-<div class="controls">
-<input type="text" class="input-xlarge" id="cmd" name="cmd" value="domino::ensure-domino-is-running">
-</div>
+<div class="form-group">
+<label for="cmd">命令</label>
+<input type="text" class="form-control" id="cmd" name="cmd" value="domino::ensure-domino-is-running">
+
 </div>
 <div class="form-actions">
 <button type="submit" class="btn btn-primary">发送</button>
