@@ -5,13 +5,18 @@
 <legend>发送命令</legend>
 <div class="form-group">
 <label for="servername">服务器</label>
-<input type="text" class="form-control" id="servername" name="servername" placeholder="mail01">
-
+<select class="form-control" name="cmd" id="cmd">
+  <option>sm01</option>
+  <option>mail01</option>
+</select>
 </div>
 <div class="form-group">
-<label for="cmd">命令</label>
-<input type="text" class="form-control" id="cmd" name="cmd" value="domino::ensure-domino-is-running">
+<label for="cmd">CMD</label>
 
+<select class="form-control" name="cmd" id="cmd">
+  <option>domino::ensure-domino-is-running</option>
+  <option>domino::domino-get-versions</option>
+</select>
 </div>
 <div class="form-actions">
 <button type="submit" class="btn btn-primary">发送</button>

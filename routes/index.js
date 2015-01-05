@@ -1,5 +1,5 @@
 exports.index = function(req, res){
-res.render('index', { title: 'Index' });
+res.render('index', { title: 'Glider Master Tool' });
 };
 exports.login = function(req, res){
 res.render('login', { title: '用户登陆'});
@@ -10,7 +10,7 @@ res.render('sendCMD', { title: '发送命令'});
 exports.doSendCMD = function (req, res) {
     var commandLine = "";
     var result;
-    commandLine = 'ssh root@9.111.36.78 "cd /etc/chef/repository/run_scripts ; ./run_recipe_auto.rb cdlg3 ' + req.body.servername + ' domino::ensure-domino-is-running"';
+    commandLine = 'ssh root@9.111.36.78 "cd /etc/chef/repository/run_scripts ; ./run_recipe_auto.rb cdlg3 ' + req.body.servername + ' '+req.body.cmd+'"';
     var exec = require('child_process').exec,
     child;
     console.log('trace01');
