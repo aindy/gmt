@@ -14,15 +14,16 @@ exports.doSendCMD = function (req, res) {
     var exec = require('child_process').exec,
     child;
     console.log('trace01');
-child = exec(commandLine,
-  function (error, stdout, stderr) {
-      result=stdout+stderr;
-    console.log('result: ' + result);
+    child = exec(commandLine,function (error, stdout, stderr) {
+        result=stdout+stderr;
+        console.log('result: ' + result);
+        res.render('doSendCMD', { title: '结果', result: result });
     if (error !== null) {
       console.log('exec error: ' + error);
+      res.render('doSendCMD', { title: '结果', result: result });
     }
 });
-    res.render('doSendCMD', { title: '发送命令', result: result });
+    
 };
 exports.doLogin = function(req, res){
 var user={
