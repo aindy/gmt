@@ -13,7 +13,7 @@ exports.doSendCMD = function (req, res) {
     commandLine = 'ssh root@9.111.36.78 "cd /etc/chef/repository/run_scripts ; ./run_recipe_auto.rb cdlg3 ' + req.body.servername + ' '+req.body.cmd+'"';
     var exec = require('child_process').exec,
     child;
-    console.log('trace01');
+    console.log('trace commandLine:' + commandLine);
     child = exec(commandLine,function (error, stdout, stderr) {
         result=stdout+stderr;
         console.log('result: ' + result);
