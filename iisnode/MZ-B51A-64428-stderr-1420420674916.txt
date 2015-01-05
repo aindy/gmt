@@ -1,0 +1,18 @@
+ReferenceError: C:\Users\MZ\Documents\My Web Sites\GMT\views\doSendCMD.html:3
+    1| <% include header.html %>
+    2| <div class="container-fluid">
+ >> 3| <%- commandLine %>
+    4| </div>
+    5| <% include footer.html %>
+
+commandLine is not defined
+    at eval (eval at <anonymous> (C:\Users\MZ\Documents\My Web Sites\GMT\node_modules\ejs\lib\ejs.js:242:14))
+    at eval (eval at <anonymous> (C:\Users\MZ\Documents\My Web Sites\GMT\node_modules\ejs\lib\ejs.js:242:14))
+    at exports.compile (C:\Users\MZ\Documents\My Web Sites\GMT\node_modules\ejs\lib\ejs.js:255:15)
+    at Object.exports.render (C:\Users\MZ\Documents\My Web Sites\GMT\node_modules\ejs\lib\ejs.js:293:13)
+    at View.exports.renderFile [as engine] (C:\Users\MZ\Documents\My Web Sites\GMT\node_modules\ejs\lib\ejs.js:323:20)
+    at View.render (C:\Users\MZ\Documents\My Web Sites\GMT\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (C:\Users\MZ\Documents\My Web Sites\GMT\node_modules\express\lib\application.js:500:10)
+    at ServerResponse.res.render (C:\Users\MZ\Documents\My Web Sites\GMT\node_modules\express\lib\response.js:755:7)
+    at exports.doSendCMD (C:\Users\MZ\Documents\My Web Sites\GMT\routes\index.js:25:9)
+    at callbacks (C:\Users\MZ\Documents\My Web Sites\GMT\node_modules\express\lib\router\index.js:161:37)
