@@ -2,10 +2,10 @@ exports.index = function(req, res){
 res.render('index', { title: 'Glider Master Tool' });
 };
 exports.login = function(req, res){
-res.render('login', { title: '用户登陆'});
+res.render('login', { title: 'Login'});
 };
 exports.sendCMD = function(req, res){
-res.render('sendCMD', { title: '发送命令'});
+res.render('sendCMD', { title: 'Send Command'});
 };
 exports.doSendCMD = function (req, res) {
     var commandLine = "";
@@ -17,10 +17,10 @@ exports.doSendCMD = function (req, res) {
     child = exec(commandLine,function (error, stdout, stderr) {
         result=stdout+stderr;
         console.log('result: ' + result);
-        res.render('doSendCMD', { title: '结果', result: result });
+        res.render('doSendCMD', { title: 'Result', result: result });
     if (error !== null) {
       console.log('exec error: ' + error);
-      res.render('doSendCMD', { title: '结果', result: result });
+      res.render('doSendCMD', { title: 'Result', result: result });
     }
 });
     
