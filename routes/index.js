@@ -7,6 +7,8 @@ res.render('login', { title: 'Login'});
 exports.sendCMD = function(req, res){
 res.render('sendCMD', { title: 'Send Command'});
 };
+
+
 exports.doSendCMD = function (req, res) {
     var commandLine = "";
     var result;
