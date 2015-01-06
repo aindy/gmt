@@ -9,7 +9,7 @@
       "email": "justbe@microsoft.com"
     }
   ],
-  "main": "./server.js",
+  "main": "./app.js",
   "keywords": [
     "azure",
     "boilerplate",

@@ -1,0 +1,8 @@
+Express server listening on port \\.\pipe\d83ae09a-44a2-486b-99ad-f6ab3fc6eab0
+trace commandLine:ssh root@9.111.36.78 "cd /etc/chef/repository/run_scripts ; ./run_recipe_auto.rb cdlg3 mail01 domino::ensure-domino-is-running"
+result: 'ssh' is not recognized as an internal or external command,
+operable program or batch file.
+
+exec error: Error: Command failed: 'ssh' is not recognized as an internal or external command,
+operable program or batch file.
+
